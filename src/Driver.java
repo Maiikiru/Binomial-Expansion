@@ -1,5 +1,14 @@
+import java.util.InputMismatchException;
+
 public class Driver {
     public static void main(String[] args) {
-        System.out.println(Binomial_Expansion.binomialExpansion(2,"3","3x"));
+        try{
+            System.out.println(Binomial_Expansion.binomialExpansion(5,"x","y"));
+        }catch(InputMismatchException e){
+            System.out.println("Error was "+e.getMessage());
+        }catch (Exception e){
+            System.out.println("Error was "+e.getMessage());
+        }
+
     }
 }
